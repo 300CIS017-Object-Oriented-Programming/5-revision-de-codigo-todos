@@ -264,6 +264,7 @@ void SNIESController::buscarProgramas(bool flag, string &palabraClave, int idCom
     list<ProgramaAcademico *> listaProgramas;
     for (map<int, ProgramaAcademico *>::iterator it = programasAcademicos.begin(); it != programasAcademicos.end(); ++it)
     {
+        // FIXME Declarar la variable fuera del ciclo
         ProgramaAcademico *programa = it->second;
         string nombre = programa->getProgramaAcademico();
         int id = programa->getIdNivelDeFormacion();
